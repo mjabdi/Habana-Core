@@ -1,0 +1,40 @@
+{
+  "name": "uniswap-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run build && node build/index_bsc.js",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/node": "^16.3.3",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@types/body-parser": "^1.19.1",
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "axios": "^0.21.4",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "ethereumjs-common": "^1.5.2",
+    "ethereumjs-tx": "^2.1.2",
+    "ethers": "^5.4.1",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mongoose": "^5.13.3",
+    "simple-pancakeswap-sdk": "^1.1.1",
+    "simple-uniswap-sdk": "^3.0.0",
+    "web3": "^1.5.3",
+    "web3-utils": "^1.5.3"
+  }
+}
