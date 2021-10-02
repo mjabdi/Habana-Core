@@ -124,7 +124,7 @@ router.get('/habanausd', async (req: Request, res: Response) => {
 
 // router.post('/mintinitialtokens', async (req: Request, res: Response) => {
 //     try{
-//         await mintHabanaToAddress("0x46eA9eCc0ad4fCCec8c8182b39d7A53A7CB6a48d", 5000);
+//         await mintHabanaToAddress("0xe6A097EfC33699223be3f00CF8A77c118DaeE305", 3000);
 //         res.status(200).send({status: "OK"});
 //     }
 //     catch(err)

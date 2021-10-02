@@ -7,6 +7,7 @@ import {startJob as startIncomingTransactions} from "./jobs/update-in-transactio
 import {startJob as startIncomingTokens} from "./jobs/update-in-tokens"
 import {startJob as processIncomingTransactions} from "./jobs/process-in-transactions"
 import {startJob as processIncomingTokens} from "./jobs/process-in-tokens"
+import path from 'path'
 
 import cors from "cors";
 import { initalizeContract } from './utils/HabanaContract';
@@ -31,25 +32,34 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api', apiRouter)
 
+app.use(
+  "/",
+  express.static(path.join(__dirname, "..", "public_habana"))
+);
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname, "..", "public_habana", "index.html"));
+});
+
+
 app.listen(PORT, () => console.log(`Running on ${PORT} ⚡`));
 mongodb().then(() => { console.info('Connected to MongoDB...') }).catch((err) => {console.error(err); process.exit(1)});
 
-initalizeContract();
+// initalizeContract();
 
-/// start Jobs here ....
-startIncomingTransactions();
+// /// start Jobs here ....
+// startIncomingTransactions();
 
-setTimeout(() => {
-  processIncomingTransactions();  
-}, 1000);
+// setTimeout(() => {
+//   processIncomingTransactions();  
+// }, 1000);
 
-setTimeout(() => {
-  startIncomingTokens();  
-}, 2000);
+// setTimeout(() => {
+//   startIncomingTokens();  
+// }, 2000);
 
-setTimeout(() => {
-  processIncomingTokens();  
-}, 3000);
+// setTimeout(() => {
+//   processIncomingTokens();  
+// }, 3000);
 
 
 
