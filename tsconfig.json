@@ -10,5 +10,11 @@
       "noImplicitAny": true,
       "esModuleInterop": true,
       "resolveJsonModule": true
-    }
+    },
+    "exclude": [
+      "node_modules",
+      "public_habana",
+      "typings/browser.d.ts",
+      "typings/browser/**"
+  ]
   }
