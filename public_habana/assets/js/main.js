@@ -120,7 +120,7 @@ const countDownClock = (number = 100, format = 'seconds') => {
 				return;
 			};
 
-			displayTimeLeft(secondsLeft);
+			// displayTimeLeft(secondsLeft);
 
 		}, 1000);
 	}
