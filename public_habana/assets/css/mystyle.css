@@ -27,6 +27,11 @@ p.note
     width: 100%;
 }
 
+section {
+    min-height: 100vh;
+
+}
+
 
 @media only screen and (min-width: 992px){
     .tokenomics-img {
@@ -34,3 +39,5 @@ p.note
         height: 450px;
     }
   }
+
+  
