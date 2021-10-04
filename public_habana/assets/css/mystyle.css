@@ -40,4 +40,9 @@ section {
     }
   }
 
-  
+  .mybullet ol {
+    list-style:upper-roman;
+    margin-left: 20px;
+  }
+
+

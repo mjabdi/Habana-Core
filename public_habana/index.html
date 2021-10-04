@@ -18,6 +18,18 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/mystyle.css">
 
+    <link rel="stylesheet" href="assets/css/flipdown.css" />
+    <script src="assets/js/flipdown.js"></script>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(el) {
+            var flipdown = new FlipDown(1635999711, {
+                theme: 'light' // or dark
+            });
+            flipdown.start();
+        });
+      </script>
+
 </head>
 
 <body>
@@ -51,7 +63,8 @@
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
                         <a class="navbar-brand" href="index.html">
-                            <img src="assets/img/hba-logo.jpeg" style="border-radius: 10%;" width="48px" height="40px" alt="Logo">
+                            <img src="assets/img/hba-logo.jpeg" style="border-radius: 10%;" width="48px" height="40px"
+                                alt="Logo">
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -76,6 +89,11 @@
                                     <a class="page-scroll" href="#tokenomics">Tokenomics</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="page-scroll" href="#buytoken" style="color:#e86875; font-weight: 600;">Buy
+                                        HBA Token</a>
+                                </li>
+
+                                <li class="nav-item">
                                     <a class="page-scroll" href="#contact">Contact</a>
                                 </li>
                             </ul>
@@ -99,11 +117,13 @@
             <div class="row align-items-center">
                 <div class="col-xl-7 col-lg-7">
                     <div class="hero-content-wrapper">
-                        <h1 class="text-white wow fadeInDown" data-wow-delay=".2s" style="line-height: 4rem;">Invest on the Best Copy Trading
+                        <h1 class="text-white wow fadeInDown" data-wow-delay=".2s" style="line-height: 4rem;">Invest on
+                            the Best Copy Trading
                             Platform Ever!</h1>
                         <p class="text-white wow fadeInLeft" data-wow-delay=".4s" style="color:#eee !important">HABANA
                             is the first truly-distributed copy trading platform</p>
-                        <a class="theme-btn wow fadeInUp" data-wow-delay=".6s" style="max-width: 100%;">Buy HBA Token (COMING SOON)</a>
+                        <a class="theme-btn wow fadeInUp page-scroll" href="#buytoken" data-wow-delay=".6s"
+                            style="max-width: 100%;">Buy HBA Token Now</a>
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-5">
@@ -272,99 +292,6 @@
 
 
 
-    <!-- ========================= about-section start ========================= -->
-    <!-- <section id="about" class="about-section pt-150 pb-20">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="about-img mb-30">
-                            <img src="assets/img/about-img.svg" alt="image" class=" wow fadeInLeft" data-wow-delay=".4s">
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="about-content mb-30">
-                            <div class="section-title mb-40">
-                                <h2 class="wow fadeInUp" data-wow-delay=".2s">About Us</h2>
-                            </div>
-                            <p class="mb-15 wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore.</p>
-                            <p class="mb-35 wow fadeInUp" data-wow-delay=".6s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore.</p>
-                            <a href="#" class="theme-btn theme-btn-2 wow fadeInRight" data-wow-delay=".8s">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-    <!-- ========================= about-section end ========================= -->
-
-    <!-- ========================= service-section start ========================= -->
-    <!-- <section id="service" class="service-section pt-150 pb-120" style="background-image: linear-gradient(#004c80 0%, #004c80 4.66%, #002f4f  76.69%, #00497a  100%);">
-            <div class="container text-center">
-            <h1 style="color:#fff">How to buy HABANA?</h1>
-            <p style="color:#eee; padding-top: 20px; padding-bottom: 20px;">Please, follow the below instructions to buy HABANA Token (HBA)</p></br>
-            <a  rel="nofollow" target="_blank" class="theme-btn wow fadeInUp" data-wow-delay=".6s">Buy HBA Token (COMING SOON)</a>
-            </div>
-        </section> -->
-    <!-- ========================= service-section end ========================= -->
-
-    <!-- ========================= roadmap-section start ========================= -->
-    <!-- <section id="roadmap" class="roadmap-section pt-100 pb-70 img-bg">
-
-        </section> -->
-    <!-- ========================= roadmap-section end ========================= -->
-
-    <!-- ========================= grows-section start ========================= -->
-    <!-- <section class="grows-section pt-150">
-
-        </section> -->
-    <!-- ========================= grows-section end ========================= -->
-
-    <!-- ========================= team-section start ========================= -->
-    <!-- <section id="team" class="team-section pt-120 pb-120">
-
-        </section> -->
-    <!-- ========================= team-section end ========================= -->
-
-    <!-- ========================= countdown-section start ========================= -->
-    <!-- <section class="countdown-section pt-70 pb-70 img-bg">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="countdown-img">
-                            <img src="assets/img/countdown-img.svg" alt="" class=" wow fadeInLeft" data-wow-delay=".4s">
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="countdown-content-wrapper">
-                            <div class="countdown">
-                                <ul id="countdown-example">
-                                    <li><span class="days">89</span>
-                                        <p class="days_text">DAYS</p>
-                                    </li>
-                                    <li><span class="hours">53</span>
-                                        <p class="hours_text">HOUR</p>
-                                    </li>
-                                    <li><span class="minutes">34</span>
-                                        <p class="minutes_text">MINS</p>
-                                    </li>
-                                    <li><span class="seconds">08</span>
-                                        <p class="seconds_text">SECS</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="countdown-content">
-                                <h2 class="text-white mb-35  wow fadeInUp" data-wow-delay=".2s">Smart and Secure Way
-                                to Invest in Crypto</h2>
-                                <p class="text-white mb-30 wow fadeInUp" data-wow-delay=".4s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore.</p>
-                                <a href="#" class="theme-btn wow fadeInUp" data-wow-delay=".6s">Buy Token Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-    <!-- ========================= countdown-section end ========================= -->
-
-
     <!-- ========================= roadmap-section start ========================= -->
 
     <section id="roadmap" class="roadmap-section pt-100 pb-70 img-bg"
@@ -440,18 +367,29 @@
                         <div class="section-title mb-40">
                             <h2 class="wow fadeInUp" data-wow-delay=".2s">Tokenomics</h2>
                         </div>
-                        <p class="mb-15 wow fadeInUp" data-wow-delay=".4s" style="color:#4b3987; font-weight: 500; font-size: 1.2rem;">  <span style="color:#777; font-weight: 400;"> Name : </span> HABANA Token </p>
-                        <p class="mb-15 wow fadeInUp" data-wow-delay=".4s" style="color:#4b3987; font-weight: 500; font-size: 1.2rem;">  <span style="color:#777; font-weight: 400;"> Symbol : </span> HBA </p>
-                        <p class="mb-15 wow fadeInUp" data-wow-delay=".4s" style="color:#4b3987; font-weight: 500;font-size: 1.2rem;">  <span style="color:#777; font-weight: 400;"> Total Supply : </span> 1,000,000,000 </p>
+                        <p class="mb-15 wow fadeInUp" data-wow-delay=".4s"
+                            style="color:#4b3987; font-weight: 500; font-size: 1.2rem;"> <span
+                                style="color:#777; font-weight: 400;"> Name : </span> HABANA Token </p>
+                        <p class="mb-15 wow fadeInUp" data-wow-delay=".4s"
+                            style="color:#4b3987; font-weight: 500; font-size: 1.2rem;"> <span
+                                style="color:#777; font-weight: 400;"> Symbol : </span> HBA </p>
+                        <p class="mb-15 wow fadeInUp" data-wow-delay=".4s"
+                            style="color:#4b3987; font-weight: 500;font-size: 1.2rem;"> <span
+                                style="color:#777; font-weight: 400;"> Total Supply : </span> 1,000,000,000 </p>
 
-                        <p class="mb-15 wow fadeInUp" data-wow-delay=".4s"> <span style="font-size: 1rem;font-weight: 400;color:#777;">Contract Address:</span>
-                            <br/>
-                            <a href="https://bscscan.com/token/0xedc48beefed35067d474fd55d0d9cede34289238" target="_blank" style="color:#2448d6; font-size: 0.82rem;">0xedc48beefed35067d474fd55d0d9cede34289238</a>
+                        <p class="mb-15 wow fadeInUp" data-wow-delay=".4s"> <span
+                                style="font-size: 1rem;font-weight: 400;color:#777;">Contract Address:</span>
+                            <br />
+                            <a href="https://bscscan.com/token/0xedc48beefed35067d474fd55d0d9cede34289238"
+                                target="_blank"
+                                style="color:#2448d6; font-size: 0.82rem;">0xedc48beefed35067d474fd55d0d9cede34289238</a>
                         </p>
-                        <p class="mb-35 wow fadeInUp" data-wow-delay=".6s"> 
+                        <p class="mb-35 wow fadeInUp" data-wow-delay=".6s">
                             <img src="assets/img/habana-qr-address.png" alt="HABANA ADDRESS" class="wow fadeInLeft">
                         </p>
-                        <p class="note mb-15 wow fadeInUp" data-wow-delay=".4s" style="font-size: 0.95rem; line-height: 1.5rem;">Note: In order to see your HBA tokens in your wallet, please add this address to your wallet app.</p>
+                        <p class="note mb-15 wow fadeInUp" data-wow-delay=".4s"
+                            style="font-size: 0.95rem; line-height: 1.5rem;">Note: In order to see your HBA tokens in
+                            your wallet, please add this address to your wallet app.</p>
 
 
                         <!-- <a href="#" class="theme-btn theme-btn-2 wow fadeInRight" data-wow-delay=".8s">Learn More</a> -->
@@ -464,34 +402,82 @@
 
 
 
-    <!-- ========================= tokenomics-section start ========================= -->
 
-    <!-- <section id="tokenomics" class="roadmap-section pt-100 pb-70 img-bg" style="background-color: #fff;">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-7 col-md-9 mx-auto">
-                    <div class="section-title text-center mb-55">
-                        <h2 class="mb-20 wow fadeInUp" data-wow-delay=".4s"
-                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;margin-left: 0px; color:#4b3987;">Tokenomics
-                        </h2>
+    <!-- ========================= buytoken-section start ========================= -->
+    <section id="buytoken" class="service-section pt-150 pb-120"
+        style="background-image: linear-gradient(#004c80 0%, #004c80 4.66%, #002f4f  76.69%, #00497a  100%);">
+        <div class="container text-center">
+            <h1 style="color:#fff"> <span style="color:#42eb00">Token Presale</span> has been started ! </h1>
+            <p style="color:#eee; padding-top: 20px; padding-bottom: 20px; font-size: 1.2rem;">Buy HBA Tokens with <span style="color:#42eb00;font-weight: 600;">25%</span>  discount now, don't miss this opportunity!</p>
+
+
+            <div style="display: flex; justify-content: center;">
+                <div style="border: 2px solid #42eb00; border-radius: 10px; padding: 20px; margin-bottom: 30px;">
+                    <h3 style="color:#eee"> Presale Price : <span style="color:#42eb00">$0.01</span> </h1>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <div
+                    style="padding: 20px 10px 30px 10px; background-image: linear-gradient(#0d0d0d 0%, #212121 4.66%, #0d0d0d 76.69%, #0d0d0d 100%); border-radius: 20px;width: 100%; max-width: 700px; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
+            
+                    <div style="font-size: 1.5rem; font-weight: 500; color: rgb(255, 43, 43); margin-bottom: 20px;">Presale ends in :
                     </div>
+            
+                    <div id="flipdown" class="flipdown" style="margin: auto !important;"></div>
+            
                 </div>
             </div>
 
+    
 
-            <div class="row">
-                <div class="col-xl-6 col-lg-7 col-md-9 mx-auto">
-                        <img src="assets/img/tokenomics.png" width="650px" height="500px" alt="tokenomics" class="wow fadeInLeft" data-wow-delay=".4s">
-                </div>
+
+            <div style="margin-top:50px;"></div>
+
+            <h2 style="color:#fff"> How to buy HABANA Token ?</h1>
+            <p style="color:#eee; padding-top: 50px; padding-bottom: 20px; font-size: 1.2rem;">Please follow the below instructions carefully to buy HABANA Token (HBA) :</p>
+            
+            <div class="mybullet" style="background-color: #111; color: #eee; border-radius: 10px; padding: 20px; text-align: left; line-height: 3rem;font-size: 1.2rem;">
+                <ol>
+                    <li>
+                        Make sure you have an account on Binance Smart Chain. <span style="color: #777;">(if not, you can create an account within your Wallet app)</span>
+                    </li>
+                    <li>
+                        Make sure you have BNB in your account. <span style="color: #777;">(if not, you can send BNB from an exchange like Kraken, Coinbase or Binance to your address) </span>
+                    </li>
+                    <li>
+                        Send BNB ( just from your own address ) to this address (HABANA Presale Address) : 
+
+                         <div style="color:#9ebff1">0x2a57499b09F148337A49c0A805596bf7C9aF14dB </div>
+                         <img src="assets/img/habana-presale-address.png" alt="account">
+
+                         <p class="note mb-15 wow fadeInUp" data-wow-delay=".4s"
+                         style="margin-top: 10px; font-size: 0.95rem; line-height: 1.5rem; color: #000;">Note: One HBA token is almost $0.01, so if you for example send 0.1 BNB to this address and BNB price is $430, you will receive 43000 HBA tokens in return.</p>
+ 
+
+                    </li>
+                    <li>
+                        In order to see your HBA tokens in your wallet, please add the following address (HABANA Token Contract Address) to your wallet app : 
+
+                         <div style="color:#9ebff1">0xedc48beefed35067d474fd55d0d9cede34289238 </div>
+                         <img src="assets/img/habana-qr-address.png" alt="account">
+
+                         <p class="note mb-15 wow fadeInUp" data-wow-delay=".4s"
+                         style="margin-top: 10px; font-size: 0.95rem; line-height: 1.5rem; color: #000;">Note: If you have already added the HBA token contract address to your wallet, just skip this step.</p>
+ 
+
+                    </li>
+
+                </ul>
             </div>
 
 
 
-
+            <!-- <a rel="nofollow" target="_blank" class="theme-btn wow fadeInUp" data-wow-delay=".6s">Buy HBA Token</a> -->
         </div>
-    </section> -->
+    </section>
+    <!-- ========================= buytoken-section end ========================= -->
 
-    <!-- ========================= tokenomics-section end ========================= -->
 
 
     <!-- ========================= contact-section start ========================= -->
@@ -553,15 +539,19 @@
                     <div class="footer-widget mb-60 wow fadeInLeft" data-wow-delay=".2s">
 
 
-                        <a href="index.html" class="logo mb-40"><img src="assets/img/hba-logo.jpeg" style="border-radius: 50%;" alt="Logo"
-                                width="200px"></a>
+                        <a href="index.html" class="logo mb-40"><img src="assets/img/hba-logo.jpeg"
+                                style="border-radius: 50%;" alt="Logo" width="200px"></a>
                         <p class="mb-30">HABANA is the first truly-distributed copy trading platform</p>
                         <div class="footer-social-links">
                             <ul>
-                                <li><a href="https://www.facebook.com/HabanaToken/" target="_blank"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="https://twitter.com/Habanatoken" target="_blank"><i class="lni lni-twitter-filled"></i></a></li>
-                                <li><a href="https://t.me/habanatoken" target="_blank"><i class="lni lni-telegram-original"></i></a></li>
-                                <li><a href="https://www.instagram.com/habanatoken/" target="_blank"><i class="lni lni-instagram-original"></i></a></li>
+                                <li><a href="https://www.facebook.com/HabanaToken/" target="_blank"><i
+                                            class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="https://twitter.com/Habanatoken" target="_blank"><i
+                                            class="lni lni-twitter-filled"></i></a></li>
+                                <li><a href="https://t.me/habanatoken" target="_blank"><i
+                                            class="lni lni-telegram-original"></i></a></li>
+                                <li><a href="https://www.instagram.com/habanatoken/" target="_blank"><i
+                                            class="lni lni-instagram-original"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -617,7 +607,8 @@
                             <li class="mb-30">
                                 <p>
                                     <!-- Company No: C5B345 <br> -->
-                                    HABANA GROUP LTD.</p>
+                                    HABANA GROUP LTD.
+                                </p>
                             </li>
                             <li>
                                 <!-- <p>Address: M-321 Volunt Ave, <br> Staten Islandm, NY 201526</p> -->
