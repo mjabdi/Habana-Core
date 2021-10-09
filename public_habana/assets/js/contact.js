@@ -37,7 +37,7 @@ function submitcontactform (e) {
 function sendEmailData(data){
     $.ajax({
             type: "POST",
-            url: "http://https://habanatoken.com:9090/api/email/sendemail",
+            url: "https://habanatoken.com:9090/api/email/sendemail",
             data: JSON.stringify(data),// now data come in this function
             contentType: "application/json; charset=utf-8",
             crossDomain: true,
