@@ -17,4 +17,5 @@
       "typings/browser.d.ts",
       "typings/browser/**"
   ]
+  
   }

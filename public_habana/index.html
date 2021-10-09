@@ -20,15 +20,8 @@
 
     <link rel="stylesheet" href="assets/css/flipdown.css" />
     <script src="assets/js/flipdown.js"></script>
-
-    <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function(el) {
-            var flipdown = new FlipDown(1635999711, {
-                theme: 'light' // or dark
-            });
-            flipdown.start();
-        });
-      </script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/contact.js"></script>
 
 </head>
 
@@ -503,25 +496,35 @@
                         <p class="mb-55 wow fadeInUp" data-wow-delay=".4s">
                             Please get in touch with any questions you may have, our expert support team will get back to you promptly.
                         </p>
-                        <div method="POST" id="contact-form" class="contact-form">
+                        <div id="contact-form" class="contact-form">
                             <div class="row">
                                 <div class="col-lg-6 col-md-6">
-                                    <input type="text" id="name" name="name" placeholder="Name">
+                                    <input type="text" id="name" name="name" placeholder="Name *">
                                 </div>
                                 <div class="col-lg-6 col-md-6">
-                                    <input type="email" id="email" name="email" placeholder="Email">
+                                    <input type="email" id="email" name="email" placeholder="Email *">
                                 </div>
                                 <div class="col-lg-6 col-md-6">
-                                    <input type="text" id="phone" name="phone" placeholder="Phone">
+                                    <input type="text" id="phone" name="phone" placeholder="Phone *">
                                 </div>
                                 <div class="col-lg-6 col-md-6">
-                                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                                    <input type="text" id="subject" name="subject" placeholder="Subject *">
                                 </div>
                                 <div class="col-lg-12">
-                                    <textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+                                    <textarea name="message" id="message" rows="5" placeholder="Message *"></textarea>
                                 </div>
                             </div>
-                            <button type="submit" class="theme-btn theme-btn-1">SEND MESSAGE</button>
+
+                            <div style="display: none;" id="alert-error-contact" class="alert alert-danger" role="alert">
+                                Error - Please enter all required fields!
+                            </div>
+
+                            <div style="display: none;" id="alert-success-contact" class="alert alert-success" role="alert">
+                                Success - Your message has been sent successfully!
+                            </div>
+
+
+                            <button type="button" id="submit-contact-form" class="theme-btn theme-btn-1" >SEND MESSAGE</button>
                         </div>
                     </div>
                 </div>

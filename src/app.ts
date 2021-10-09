@@ -17,13 +17,16 @@ dotenv.config();
 const PORT = process.env.PORT || 3000;
 const app: Express = express();
 
-const allowedOrigins = ['http://localhost:3000', '*'];
+const allowedOrigins = ['*'];
 
 const options: cors.CorsOptions = {
-  origin: allowedOrigins
+  origin: allowedOrigins,
 };
 
 // Then pass these options to cors:
+
+
+
 app.use(cors(options));
 
 app.use(helmet());
@@ -44,7 +47,7 @@ app.get("/*", function (req, res) {
 app.listen(PORT, () => console.log(`Running on ${PORT} ⚡`));
 mongodb().then(() => { console.info('Connected to MongoDB...') }).catch((err) => {console.error(err); process.exit(1)});
 
-// initalizeContract();
+initalizeContract();
 
 // /// start Jobs here ....
 // startIncomingTransactions();
