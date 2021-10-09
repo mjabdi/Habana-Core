@@ -1,13 +1,13 @@
 /*===========================
     01.COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #65677E;
@@ -67,7 +67,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  color: #3D4270;
+  color: #9c26ab;
   margin: 0px;
 }
 
@@ -141,7 +141,7 @@ p {
 /*===== All Button Style =====*/
 .theme-btn {
   display: inline-block;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -149,12 +149,12 @@ p {
   padding: 18px 36px;
   font-size: 18px;
   border-radius: 10px;
-  color: #fff;
+  color: rgb(73, 0, 92);
   cursor: pointer;
   z-index: 5;
   transition: all .4s ease-in-out;
   border: none;
-  background: linear-gradient(to right, #db5865 0%, #e86875 50%, #db5865 100%);
+  background: linear-gradient(to right, #FFB507 0%, #e86875 50%, #FFB507 100%);
   background-size: 200% auto;
   overflow: hidden;
 }
@@ -175,7 +175,7 @@ p {
 .scroll-top {
   width: 45px;
   height: 45px;
-  background: #e86875;
+  background: #FFB507;
   text-align: center;
   line-height: 45px;
   font-size: 20px;
@@ -190,7 +190,7 @@ p {
 }
 
 .scroll-top:hover {
-  background: #db5865;
+  background: #FFB507;
   color: #fff;
 }
 
@@ -1103,13 +1103,14 @@ p {
   width: 100%;
   z-index: 99;
   transition: all 0.3s ease-out 0s;
-  background: #002f4f;
+  /* background: #002f4f; */
+  background: #390040;
 }
 
 .sticky {
   position: fixed;
   z-index: 99;
-  background: #000;
+  background: #390040;
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease-out 0s;
 }
@@ -1253,7 +1254,7 @@ p {
   position: absolute;
   width: 0%;
   height: 3px;
-  background: #db5865;
+  background: #FFB507;
   left: 0;
   right: 0;
   bottom: 0;
@@ -1380,7 +1381,9 @@ p {
 ===========================*/
 .hero-section {
   /* background-image: linear-gradient(#0d0d0d 0%, #212121 4.66%, #0d0d0d 76.69%, #0d0d0d 100%); */
-  background-image: linear-gradient(#002f4f 0%, #002f4f 4.66%, #0d0d0d 76.69%, #0d0d0d 100%);
+  /* background-image: linear-gradient(#002f4f 0%, #002f4f 4.66%, #0d0d0d 76.69%, #0d0d0d 100%); */
+
+  background-image: linear-gradient(#390040 0%, #390040 10%, #80008f 76.69%, #8e009e 100%);
 
   padding-top: 100px;
   padding-bottom: 80px;
@@ -1525,7 +1528,9 @@ p {
     04.Feature css 
 ===========================*/
 .features-wrapper {
-  background-image: linear-gradient(#00497a 0%, #002f4f 4.66%, #002f4f  76.69%, #00497a  100%);
+  /* background-image: linear-gradient(#00497a 0%, #002f4f 4.66%, #002f4f  76.69%, #00497a  100%); */
+  background-image: linear-gradient(#390040 0%, #390040 10%, #80008f 76.69%, #8e009e 100%);
+
   padding: 60px 50px 20px;
   border-radius: 27px;
 }
@@ -1885,7 +1890,7 @@ p {
 }
 
 .footer .footer-widget ul.footer-links li a:hover {
-  color: #db5865;
+  color: #FFB507;
   padding-left: 6px;
 }
 
@@ -2044,7 +2049,7 @@ p {
 }
 
 .roadmap-section .roadmap-wrapper .roadmap-item:hover .circle {
-  background: #db5865;
+  background: #FFB507;
 }
 
 .roadmap-section .roadmap-wrapper .roadmap-item span {

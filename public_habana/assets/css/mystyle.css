@@ -12,15 +12,19 @@ p.note
 {
      -moz-border-radius: 6px;
      -webkit-border-radius: 6px;
-     background-color: #f0f7fb;
-     background-image: url(../img/pencil-48.png);
-     background-position: 9px 0px;
+     background-color: #fff;
+     background-image: url(../img/note.png);
+     background-size: 38px 38px;
+     background-position: 10px 10px;
      background-repeat: no-repeat;
-     border: solid 1px #3498db;
-     border-radius: 6px;
+     border: solid 2px #f19a17;
+     border-radius: 10px;
      line-height: 18px;
      overflow: hidden;
      padding: 15px 30px 15px 60px ;
+     color: #814900;
+     max-width: 80%;
+     margin-top: 10px;
 }
 
 .tokenomics-img {
