@@ -1,7 +1,5 @@
 "use strict";
 
-import axios from 'axios';
-
 document.addEventListener("DOMContentLoaded", function(el) {
 
     document.getElementById("submit-airdrop-form").addEventListener("click", function (event){
