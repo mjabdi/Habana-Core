@@ -246,7 +246,7 @@ p {
 .scroll-top {
   width: 45px;
   height: 45px;
-  background: #FFB507;
+  background-color: #FFB507;
   text-align: center;
   line-height: 45px;
   font-size: 20px;
@@ -262,8 +262,8 @@ p {
 }
 
 .scroll-top:hover {
-  color: #FFB507;
-  background-color: #7a008a;
+  background-color: #FFB507;
+  color: #7a008a;
 }
 
 @keyframes animation1 {
