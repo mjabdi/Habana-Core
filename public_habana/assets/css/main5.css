@@ -250,7 +250,8 @@ p {
   text-align: center;
   line-height: 45px;
   font-size: 20px;
-  color: #fff;
+  font-weight: 600;
+  color: #7a008a;
   border-radius: 5px;
   position: fixed;
   bottom: 30px;
@@ -261,8 +262,8 @@ p {
 }
 
 .scroll-top:hover {
-  background: #FFB507;
-  color: #fff;
+  color: #FFB507;
+  background-color: #7a008a;
 }
 
 @keyframes animation1 {
