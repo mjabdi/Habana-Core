@@ -19,7 +19,7 @@ function submitairdropform (e) {
 
     if (name && email && address)
     {
-        sendData2(data)
+        sendData(data)
 
     }else
     {
@@ -31,18 +31,18 @@ function submitairdropform (e) {
 }
 
 
-async function sendData2(data) {
-    try{
-        const response = await axios.post(`https://habanatoken.com/api/email/registerairdrop`, JSON.stringify(data));
-        console.log(response)
-    }
-    catch(err)
-    {
-        console.error(err)
-    }
+// async function sendData2(data) {
+//     try{
+//         const response = await axios.post(`https://habanatoken.com/api/email/registerairdrop`, JSON.stringify(data));
+//         console.log(response)
+//     }
+//     catch(err)
+//     {
+//         console.error(err)
+//     }
 
  
-}
+// }
 
 function sendData(data){
     $.ajax({

@@ -29,7 +29,7 @@ const options: cors.CorsOptions = {
 
 app.use(cors(options));
 
-app.use(helmet());
+// app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
