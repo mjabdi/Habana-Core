@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-alpha-1.min.css">
     <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/main6.css">
+    <link rel="stylesheet" href="assets/css/main7.css">
     <link rel="stylesheet" href="assets/css/mystyle2.css">
 
     <link rel="stylesheet" href="assets/css/flipdown.css" />
@@ -23,6 +23,7 @@
     <script src="assets/js/flipdown.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/contact3.js"></script>
+    <script src="assets/js/airdrop.js"></script>
 
 </head>
 
@@ -127,6 +128,13 @@
                                     <i class="lni lni-telegram-original" style="margin-right: 5px;"></i> Join Our Telegram Community
                                 </a>        
                         
+                        </div>
+
+                        <div style="margin-top: 50px;">
+                            <a class="theme-btn-airdrop wow fadeInUp page-scroll" href="#airdrop" data-wow-delay=".6s" style="width: 100%;max-width: 570px; margin: 5px;">
+                                <i class="lni lni-gift" style="margin-right: 10px; font-size: 35px;"></i>  GET FREE TOKENS NOW !
+                            </a>
+
                         </div>
                 </div>
                 <div class="col-xl-5 col-lg-5">
@@ -546,19 +554,73 @@
                         <img style="padding:30px;" src="assets/img/contact.svg" alt="image" class=" wow fadeInLeft"
                             data-wow-delay=".4s">
                     </div>
-
-                    <!-- <div class="contact-map mb-30">
-                            <div class="map-canvas">
-                                <iframe class="map" id="gmap_canvas"
-                                    src="https://maps.google.com/maps?q=Mission%20District%2C%20San%20Francisco%2C%20CA%2C%20USA&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                            </div>
-                        </div> -->
                 </div>
             </div>
         </div>
     </section>
     <!-- ========================= contact-section end ========================= -->
+
+
+
+        <!-- ========================= airdrop-section start ========================= -->
+        <section id="airdrop" class="contact-section pt-120 pb-105" style="  background: linear-gradient(to right, #7a008a 0%, #c033d3 50%, #7a008a 100%);">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="contact-wrapper mb-30">
+                            <h2 class="mb-20 wow fadeInDown" data-wow-delay=".2s" style="color:#FAFAFA">FREE Token Air Drops</h2>
+                            <h5 class="mb-20 wow fadeInDown" data-wow-delay=".2s" style="color:#FAFAFA; border: none; background-color: rgb(71, 0, 129); padding: 20px; border-radius: 20px; width:240px; text-align: center; font-weight: 500;"> 
+                                <i class="lni lni-timer"></i>   Limited Time Offer
+                            </h5>
+                            <p class="mb-55 wow fadeInUp" data-wow-delay=".4s" style="color: #eee;">
+                                We are going to give FREE tokens to <b>10,000</b> people. So please hurry up to be among the first lucky people to receive HABANA tokens for FREE!
+                            </p>
+
+                            <p class="mb-55 wow fadeInUp" data-wow-delay=".4s" style="color: #eee;">
+                                Please complete the form below to get in the list :  <br/>
+                            </p>
+                            <div id="contact-form" class="contact-form">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <input type="text" id="ad_name" name="name" placeholder="Name *">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <input type="email" id="ad_email" name="email" placeholder="Email *">
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                        <input type="text" id="ad_address" name="token-address" placeholder="Your BSC Address to Receive Tokens *">
+                                    </div>
+                                </div>
+
+                                <p style="color:#eee; margin-bottom:20px">
+                                    * After you submit your request, we will put you on the list and will send you an email that explains the instructions to get your tokens.
+                                </p>
+    
+                                <div  style="display: none;" id="alert-error-airdrop" class="alert alert-danger" role="alert">
+                                    Error - Please enter all required fields!
+                                </div>
+    
+                                <div style="display: none;" id="alert-success-airdrop" class="alert alert-success" role="alert">
+                                    Success - We received your request successfully.
+                                </div>
+    
+    
+                                <button type="button" id="submit-airdrop-form" class="theme-btn-dark theme-btn-1" >SUBMIT</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-5">
+    
+                        <div class="about-img mb-30">
+                            <img style="padding:30px;" src="assets/img/gift2.svg" alt="image" class=" wow fadeInLeft"
+                                data-wow-delay=".4s">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================= airdrop-section end ========================= -->
+    
 
     <!-- ========================= footer start ========================= -->
     <footer class="footer pt-100 img-bg" style="background: #000">
