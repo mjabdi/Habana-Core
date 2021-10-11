@@ -50,7 +50,7 @@ function sendData(data){
             url: "https://habanatoken.com/api/email/registerairdrop",
             data: JSON.stringify(data),// now data come in this function
             contentType: "application/json; charset=utf-8",
-            crossDomain: false,
+            crossDomain: true,
             dataType: "json",
             success: function (data, status, jqXHR) {
 

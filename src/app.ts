@@ -17,7 +17,7 @@ dotenv.config();
 const PORT = process.env.PORT || 3000;
 const app: Express = express();
 
-const allowedOrigins = ['*'];
+const allowedOrigins = ['*', 'https://www.habanatoken.com'];
 
 const options: cors.CorsOptions = {
   origin: allowedOrigins,
