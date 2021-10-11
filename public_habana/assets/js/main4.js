@@ -31,7 +31,7 @@ window.onscroll = function () {
 
 	// show or hide the back-top-top button
 	var backToTo = document.querySelector(".scroll-top");
-	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 1000) {
 		if (backToTo && backToTo.style)
 		{
 			backToTo.style.display = "block";
@@ -48,7 +48,8 @@ window.onscroll = function () {
 
 // section menu active
 function onScroll(event) {
-	var sections = document.querySelectorAll('.page-scroll');
+	var sections = window.document.querySelector('.page-scroll');
+
 	var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 
 	for (var i = 0; i < sections.length; i++) {
@@ -56,6 +57,7 @@ function onScroll(event) {
 		var val = currLink.getAttribute('href');
 		var refElement = document.querySelector(val);
 		var scrollTopMinus = scrollPos + 73;
+		console.log(scrollPos)
 		if (refElement.offsetTop <= scrollTopMinus && (refElement.offsetTop + refElement.offsetHeight > scrollTopMinus)) {
 			document.querySelector('.page-scroll').classList.remove('active');
 			currLink.classList.add('active');
@@ -65,7 +67,6 @@ function onScroll(event) {
 	}
 };
 
-window.document.addEventListener('scroll', onScroll);
 
 
 //===== close navbar-collapse when a  clicked
