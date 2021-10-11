@@ -1,5 +1,8 @@
 "use strict";
 
+import 'regenerator-runtime/runtime';
+import axios from 'axios';
+
 document.addEventListener("DOMContentLoaded", function(el) {
 
     document.getElementById("submit-airdrop-form").addEventListener("click", function (event){
@@ -19,7 +22,7 @@ function submitairdropform (e) {
 
     if (name && email && address)
     {
-        sendData(data)
+        sendData2(data)
 
     }else
     {
@@ -28,6 +31,20 @@ function submitairdropform (e) {
     }
 
 
+}
+
+
+async function sendData2(data) {
+    try{
+        const response = await axios.post(`https://habanatoken.com/api/email/registerairdrop`, JSON.stringify(data));
+        console.log(response)
+    }
+    catch(err)
+    {
+        console.error(err)
+    }
+
+ 
 }
 
 function sendData(data){
