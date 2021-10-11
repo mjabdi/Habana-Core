@@ -38,9 +38,6 @@ function sendData(data){
             contentType: "application/json; charset=utf-8",
             crossDomain: true,
             dataType: "json",
-            beforeSend: function(request) {
-                request.setRequestHeader("Content-Security-Policy", 'default-src *');
-              },
             success: function (data, status, jqXHR) {
 
                  document.getElementById('ad_name').value = "";
