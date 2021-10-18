@@ -1,7 +1,7 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function(el) {
-    var flipdown = new FlipDown(1638388818, {
+    var flipdown = new FlipDown(1638388800, {
         theme: 'light' // or dark
     });
     flipdown.start();
