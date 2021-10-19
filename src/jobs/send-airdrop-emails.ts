@@ -30,7 +30,9 @@ async function sendEmails(){
         const customHtml = html.replace("MOHAMMAD", name.toUpperCase()).replace("0xe4E1400eE12337ba28e0Fc25f98Af8f96DC68425", address)
 
 
-       const result = await sendMail("m.jafarabdi@gmail.com","Your Airdrop Request Accepted",customHtml);
+    //    const result = await sendMail("m.jafarabdi@gmail.com","Your Airdrop Request Accepted",customHtml);
+           const result = await sendMail(email,"Your Airdrop Request Accepted",customHtml);
+
 
         if (result && result.response.startsWith("250"))
         {
